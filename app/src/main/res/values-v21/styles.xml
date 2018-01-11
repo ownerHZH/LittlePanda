@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AppTheme" parent="BaseAppTheme">
+	</style>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowAnimationStyle">@style/anim_slide_right_in_left_out</item>-->
+        <item name="android:actionOverflowMenuStyle">@style/ActionButton.Overflow.Menu</item>
+    </style>
+
+</resources>

@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.jerry.littlepanda"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 201
+        versionName "2.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        //只要添加下面这一句就可以了
+        disable 'MissingTranslation'
+    }
+}
+
+greendao {
+    schemaVersion 2
+    daoPackage 'com.jerry.littlepanda.ireader.model.gen'
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/ormlite-android-5.0.jar')
+    compile files('libs/ormlite-core-5.0.jar')
+    compile files('libs/MiPush_SDK_Client_3_4_5.jar')
+    compile files('libs/MiStats_SDK_Client_1_9_6.jar')
+    compile files('libs/xiaomi_sdk.jar')
+    //View injection
+    compile "com.jakewharton:butterknife:$rootProject.butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknifeVersion"
+    //RxJava
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"
+    //NetWork
+    compile "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+    compile "com.squareup.okio:okio:$rootProject.okioVersion"
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-scalars:$rootProject.retrofitVersion"
+    // RxLifecycle
+
+    //ImageLoader
+    compile "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    //ORM Database
+    compile "org.greenrobot:greendao:$rootProject.greendaoVersion"
+    //AndroidTagGroup
+
+    //compile files('libs/jsoup-1.10.3.jar')
+    //compile 'com.mcxiaoke.volley:library:1.0.+@aar'
+    //compile 'pub.devrel:easypermissions:1.0.0'
+    //Splash CardView
+
+    //compile 'com.crazysunj:cardslideview:1.2.1'
+    compile project(':cardslideview')
+    compile files('libs/BaiduLBS_Android.jar')
+    //compile 'com.github.Blincheng:Toast:v1.4.1'
+    compile 'org.jsoup:jsoup:1.10.3'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:percent:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    compile 'me.gujun.android.taggroup:library:1.4@aar'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    compile 'com.shuyu:GSYVideoPlayer:2.0.8'
+    compile 'com.android.support:multidex:1.0.1'
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+}

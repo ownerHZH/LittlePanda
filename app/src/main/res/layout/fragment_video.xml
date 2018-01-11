@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_common_bg"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0.5dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="1dp"
+        card_view:contentPadding="0dp"
+        card_view:cardPreventCornerOverlap="true"
+        android:layout_weight="1">
+
+        <com.jerry.littlepanda.video.VideoItemCoverVideo
+            android:id="@+id/video_item_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/post_media_height"/>
+
+        <TextView
+            android:text="标题"
+            android:textColor="@color/white"
+            android:id="@+id/video_title"
+            android:layout_gravity="top|left"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="来源"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/video_soruce"
+            android:background="@drawable/button_tag_bg"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+</LinearLayout>

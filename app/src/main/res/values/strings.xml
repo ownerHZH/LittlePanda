@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">犀牛资讯</string>
+    <string name="title_home">资讯</string>
+    <string name="title_video">视频</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_info">阅读</string>
+    <string name="cardView">cardView</string>
+    <string name="transition_webview_img">webview_img</string>
+    <string name="main_activity_title">资讯</string>
+    <string name="title_novel">小说</string>
+
+    <!--string_array-->
+    <string-array name="nb_fragment_title">
+        <item>@string/nb.fragment.title.bookshelf</item>
+        <item>@string/nb.fragment.title.community</item>
+        <item>@string/nb.fragment.title.find</item>
+    </string-array>
+
+    <string-array name="nb_fragment_section">
+        <item>@string/nb.fragment.community.comment</item>
+        <item>@string/nb.fragment.community.discussion</item>
+        <item>@string/nb.fragment.community.help</item>
+        <item>@string/nb.fragment.community.girl</item>
+        <item>@string/nb.fragment.community.compose</item>
+    </string-array>
+
+    <!--榜单分类-->
+    <string-array name="nb_fragment_bill_book">
+        <item>周榜</item>
+        <item>月榜</item>
+        <item>总榜</item>
+    </string-array>
+
+    <!--CollBook的长按点击-->
+    <string-array name="nb_menu_net_book">
+        <item>@string/nb.menu.action.top</item>
+        <item>@string/nb.menu.action.cache</item>
+        <item>@string/nb.menu.action.delete</item>
+        <item>@string/nb.menu.action.batch_manage</item>
+    </string-array>
+
+    <string-array name="nb_menu_local_book">
+        <item>@string/nb.menu.action.top</item>
+        <item>@string/nb.menu.action.delete</item>
+        <item>@string/nb.menu.action.batch_manage</item>
+    </string-array>
+
+    <!--常用-->
+    <string name="nb.common.tip">提示</string>
+    <string name="nb.common.sure">确定</string>
+    <string name="nb.common.cancel">取消</string>
+
+    <!--网络相关-->
+
+    <string name="nb.net.error_tip">似乎没有网络哦</string>
+
+    <!--fragment_title:主页的名字-->
+    <string name="nb.fragment.title.bookshelf">书架</string>
+    <string name="nb.fragment.title.community">社区</string>
+    <string name="nb.fragment.title.find">发现</string>
+
+    <!--fragment-->
+    <string name="nb.fragment.community.comment">综合讨论区</string>
+    <string name="nb.fragment.community.discussion">书评区</string>
+    <string name="nb.fragment.community.help">书荒帮助区</string>
+    <string name="nb.fragment.community.girl">女生区</string>
+    <string name="nb.fragment.community.compose">原创区</string>
+
+    <!--fragment 主题书单-->
+    <string name="nb.fragment.book_list.hot">本周最热</string>
+    <string name="nb.fragment.book_list.newest">最新发布</string>
+    <string name="nb.fragment.book_list.collect">最多收藏</string>
+
+    <string name="nb.fragment.book_list.message">共%1$d本书 |&#160; %2$d人收藏</string>
+
+    <!--评论相关-->
+    <string name="nb.comment.floor">%1$d楼&#160;</string>
+    <string name="nb.comment.like_count">❤%1$d次同感</string>
+    <string name="nb.comment.best_comment">仰望神评论</string>
+    <string name="nb.comment.comment_count">共%1$d条评论</string>
+    <string name="nb.comment.reply_floor">(%1$d楼)</string>
+    <string name="nb.comment.reply_nickname">回复 %1$s</string>
+    <string name="nb.comment.empty_comment">暂无评论</string>
+
+    <!--书评区相关-->
+    <string name="nb.review.book_type">[%1$s]</string>
+    <string name="nb.review.recommend">%1$d 人推荐</string>
+    <string name="nb.review.helpful">有用</string>
+    <string name="nb.review.unhelpful">无用</string>
+    <string name="nb.review.book_score">给书评打分</string>
+    <string name="nb.review.master_score">楼主打分：</string>
+
+
+    <!--find-->
+    <string name="nb.fragment.find.top">排行榜</string>
+    <string name="nb.fragment.find.topic">主题书单</string>
+    <string name="nb.fragment.find.sort">分类</string>
+    <string name="nb.fragment.find.listen">有声小说</string>
+
+    <!--dialog-->
+    <string name="nb.dialog.text.introduce">我们会根据您的喜好\n推荐相对应的小说</string>
+    <string name="nb.dialog.text.choose_tip">--请选择你的喜好--</string>
+    <string name="nb.dialog.text.boy_story">男生小说</string>
+    <string name="nb.dialog.text.girl_story">女生小说</string>
+
+    <!--menu-->
+    <string name="nb.menu.action.search">搜索</string>
+    <string name="nb.menu.action.login">请登录</string>
+    <string name="nb.menu.action.message">我的消息</string>
+    <string name="nb.menu.action.download">下载列表</string>
+    <string name="nb.menu.action.sync">同步书架</string>
+    <string name="nb.menu.action.scan">扫描本地书籍</string>
+    <string name="nb.menu.action.transfer">WIFI传书</string>
+    <string name="nb.menu.action.feedback">意见反馈</string>
+    <string name="nb.menu.action.night_mode">夜间模式</string>
+    <string name="nb.menu.action.setting">设置</string>
+
+    <string name="nb.menu.action.top">置顶</string>
+    <string name="nb.menu.action.cache">缓存</string>
+    <string name="nb.menu.action.delete">删除</string>
+    <string name="nb.menu.action.batch_manage">批量管理</string>
+
+    <!--SplashActivity-->
+    <string name="nb.splash.skip">跳过</string>
+    <string name="nb.splash.into.mainpage">进入主页</string>
+
+    <!--user:用户的信息-->
+    <string name="nb.user.lv">&#160;lv.%1$d</string>
+    <!--book:书籍的信息-->
+    <string name="nb.book.type">[%1$s]</string>
+    <string name="nb.book.recommend">%1$d 人推荐</string>
+    <string name="nb.book.message">%1$d人在追 |&#160; %2$s%%读者留存</string>
+    <string name="nb.book.word">|&#160;%1$d&#160;万字</string>
+    <!--sort:每类的书-->
+    <string name="nb.sort.book_count">%1$d 本</string>
+
+    <!--tag: 标签-->
+    <string name="nb.tag.all">全部</string>
+    <string name="nb.tag.sex">性别</string>
+    <string name="nb.tag.boy">男生</string>
+    <string name="nb.tag.girl">女生</string>
+
+
+    <!--book_detail : -->
+    <string name="nb.book_detail.hot_comment">热门书评</string>
+    <string name="nb.book_detail.community">%1$s的社区</string>
+    <string name="nb.book_detail.posts_count">共有%1$d个帖子</string>
+    <string name="nb.book_detail.recommend_book_list">推荐书单</string>
+    <string name="nb.book_detail.chase_update">追更</string>
+    <string name="nb.book_detail.give_up">放弃</string>
+    <string name="nb.book_detail.start_read">开始阅读</string>
+
+    <!--DownloadTask:书籍下载-->
+    <string name="nb.download.add_succeed">成功添加到下载列表</string>
+    <string name="nb.download.exist">该任务已存在</string>
+    <string name="nb.download.load_all">已缓存全部章节</string>
+    <string name="nb.download.progress">%1$d/%2$d</string>
+    <string name="nb.download.chapter_scope">(%1$d-%2$d章)</string>
+
+    <string name="nb.download.start">继续</string>
+    <string name="nb.download.pause">暂停</string>
+    <string name="nb.download.wait">等待</string>
+    <string name="nb.download.error">错误</string>
+    <string name="nb.download.finish">完成</string>
+
+    <string name="nb.download.loading">下载中</string>
+    <string name="nb.download.waiting">等待中</string>
+    <string name="nb.download.pausing">暂停中</string>
+    <string name="nb.download.complete">已完成</string>
+    <string name="nb.download.source_error">资源或网络错误</string>
+
+    <!--mode-->
+    <string name="nb.mode.night">夜间</string>
+    <string name="nb.mode.morning">日间</string>
+
+    <!--read-->
+    <string name="nb.read.community">社区</string>
+    <string name="nb.read.brief">简介</string>
+    <string name="nb.read.setting">设置</string>
+    <string name="nb.read.download">缓存</string>'
+    <string name="nb.read.category">目录</string>
+    <string name="nb.read.no_chapter">第 %1$d 章(%2$d)</string>
+
+    <!--file system-->
+    <string name="nb.file.sub_count">%1$d 项</string>
+    <string name="nb.file.path">存储卡:%1$s</string>
+    <string name="nb.file.add_shelf">加入书架</string>
+    <string name="nb.file.add_shelves">加入书架(%1$d)</string>
+    <string name="nb.file.add_succeed">成功添加%1$d本书</string>
+
+    <!--search-->
+    <string name="nb.search.book.brief">%1$d人在追 | %2$s读者留存 | %3$s著</string>
+    <string name="device_id">获取设备ID</string>
+    <string name="toast_network_error">网络连接异常，请检查网络</string>
+    <string name="system_settings">获取系统默认设置</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_me">我的</string>
+
+
+    <string name="main_name">抢红包</string>
+    <string name="accessibility_description">启动抢红包服务，支持微信。</string>
+    <string name="service_name">犀牛抢红包</string>
+    <string name="open_service_title">需要开启辅助服务正常使用</string>
+    <string name="open_service_button">打开辅助服务</string>
+    <string name="open_notify_service">打开通知栏服务</string>
+    <string name="check_update">检查更新</string>
+    <string name="share">分享</string>
+    <string name="tips">找到[犀牛抢红包]，然后开启服务即可</string>
+    <string name="qq_settings">QQ设置</string>
+    <string name="wechat_settings">微信设置</string>
+    <string name="notify_settings">红包提醒设置</string>
+
+    <string name="follow_preference_title">关注犀牛微信</string>
+    <string name="follow_preference_summary">了解我最新的资讯动态</string>
+
+    <string name="donate_title">打赏开发者</string>
+    <string name="donate_summary">如果这工具能帮到你，可以打赏我哦</string>
+
+    <string name="after_open_hongbao">拆红包</string>
+    <string name="after_open_see">看看大家的手气(仅支持微信6.3.8版本以下)</string>
+    <string name="after_open_none">静静地看着</string>
+
+    <string name="after_get_back_home">返回桌面</string>
+    <string name="after_get_none">静静地看着</string>
+
+    <string name="wx_mode_0">自动抢</string>
+    <string name="wx_mode_1">抢单聊红包，群聊红包只通知</string>
+    <string name="wx_mode_2">抢群聊红包，单聊红包只通知</string>
+    <string name="wx_mode_3">通知手动抢(防封号)</string>
+
+    <string name="about_title">关于犀牛抢红包</string>
+    <string name="about_url">http://app.xiaomi.com/detail/508673</string>
+
+    <string name="agreement_title">免责声明</string>
+    <string name="agreement_message">本软件完全模拟人工操作，抢红包速度取决于你手机的性能与网络，不涉及任何第三方软件接口，无病毒、不收集用户隐私信息，禁止使用本软件参与赌博活动。一切因使用“%1$s”造成的任何后果，%1$s概不负责，亦不承担任何法律责任!</string>
+
+    <string name="qr_wx_id">INTADS</string>
+    <string name="qr_tips">点击复制微信号:INTADS</string>
+
+</resources>

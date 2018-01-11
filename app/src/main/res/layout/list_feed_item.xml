@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|fill_horizontal|clip_horizontal"
+    android:fadingEdge="none"
+    android:gravity="center"
+    android:background="@drawable/selector_common_bg">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0.5dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:contentPadding="8dp">
+
+        <!-- 248dp  -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pandalogo" />
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:maxLines="4"
+                    android:padding="5dp"
+                    android:text="棒冰行动"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.jerry.littlepanda.Utils.HtmlTextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:padding="5dp"
+                android:text="棒冰行动，公益传播设计夏令营" />
+            <!-- -->
+            <LinearLayout
+                android:id="@+id/imgcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pandalogo" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pandalogo" />
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pandalogo" />
+            </LinearLayout>
+
+            <com.jerry.littlepanda.readrss.FrameLayoutScale
+                android:id="@+id/pimage5"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pandalogo" />
+
+            </com.jerry.littlepanda.readrss.FrameLayoutScale>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/contentsource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Source"
+                    android:textColor="#C0C0C0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

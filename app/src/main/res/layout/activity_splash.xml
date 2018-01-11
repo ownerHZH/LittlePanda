@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wallpaper"
+    android:background="@drawable/wallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.crazysunj.cardslideview.CardViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:card_loop="true" />
+
+    <TextView
+        android:id="@+id/splash_tv_skip"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/nb.margin.large"
+        android:layout_marginRight="@dimen/nb.margin.large"
+        android:layout_marginBottom="@dimen/nb.margin.large"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_skip"
+        android:text="@string/nb.splash.into.mainpage"
+        tools:ignore="RtlHardcoded"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/weathericon"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:layout_gravity="center_vertical|right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/weathertext"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dressing"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/uv"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:gravity="top"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/car_washing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
